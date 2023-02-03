@@ -26,7 +26,7 @@
 // let user = ['Ilhom', 'Islom', 'Rustam', 'Sulton', 'Mirkomil'];
 
 // for (let i = 0; i < user.length; i++) {
-//     console.log(i);    
+//     console.log(i);
 // }
 
 // for (const value of user) {
@@ -54,10 +54,47 @@
 
 // let ar = [1,2,4,5,4];
 // console.log(ar.indexOf(4));
-// console.log(ar.lastIndexOf(4)); 
+// console.log(ar.lastIndexOf(4));
 // ar.reverse();
 // console.log(ar.includes(5));
 
 
+// Homework
+// 1
+// let arr = [2, 3, 45, 5, 78, 3];
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i]
+//     console.log(sum);
+// }
 
+// 2
+// let arr1 = [2, 3, 45, 5, 78, 3];
+// let arr2 = [2, 3, 45, 5, 78, 3];
+// let arr3 = arr1
+// console.log(arr3 == arr1);
 
+// 3
+// function camelize(str) {
+//     let myStr = str.split('-')
+//     let a = myStr.map((value, index) => index !== 0 ? value[0].toUpperCase() + value.slice(1) : value)
+//     console.log(a.join(''));
+// }
+// camelize('background-color')
+
+// 4
+let students = [
+    { id: 1, engine: 1.2, name: 'Ilhom', year: 2003 },
+    { id: 2, engine: 1.4, name: 'Islom', year: 1998 },
+    { id: 3, engine: 1.6, name: 'Rustam', year: 2002 },
+    { id: 4, engine: 1.8, name: 'Mirkomil', year: 2007 },
+    { id: 5, engine: 1.1, name: 'Sulton', year: 2001 },
+    { id: 6, engine: 2.2, name: 'Shahzod', year: 2012 },
+    { id: 7, engine: 5.2, name: 'Hojiakbar', year: 2010 },
+    { id: 8, engine: 3.2, name: 'Davron', year: 2005 },
+    { id: 9, engine: 1.9, name: 'Ilhom', year: 2003 },
+]
+
+// let res = students.filter((value) => value.year > 2000);
+let res = students.sort((a, b) => b.engine - a.engine)
+console.log(res);
